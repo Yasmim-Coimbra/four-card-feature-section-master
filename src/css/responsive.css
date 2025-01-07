@@ -1,0 +1,51 @@
+@media (max-width: 1320px) {
+    .container {
+        margin-inline: 2%;
+    }
+}
+
+@media (max-width: 800px) {
+    main {
+        height: 100%;
+    }
+
+    .container {
+        margin-top: 60px;
+        grid-template-areas: "supervisor" "team-builder" "karma" "calculator";
+        grid-template-columns: minmax(230px, 400px);
+    }
+
+    .container .card:not(:first-child) {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 580px) {
+    .intro {
+        max-width: 350px;
+    }
+
+    .intro h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 450px) {
+    .container {
+        grid-template-columns: minmax(230px, 330px);
+    }
+}
+
+@media (max-width: 320px) {
+    .intro {
+        width: 250px;
+    }
+
+    .intro h2 {
+        font-size: 20px;
+    }
+    
+    .container {
+        grid-template-columns: 250px;
+    }
+}
